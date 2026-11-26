@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rak Novel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>📚 Rak Novel</h1>
+    <p>Koleksi novel pilihan untuk teman membaca</p>
+  </header>
+
+  <main>
+    <section class="kontrol">
+      <input type="text" id="cari" placeholder="Cari judul atau penulis...">
+      <select id="filter">
+        <option value="semua">Semua Genre</option>
+      </select>
+    </section>
+
+    <section id="daftar-buku" class="grid"></section>
+    <p id="kosong" class="kosong" hidden>Buku tidak ditemukan.</p>
+  </main>
+
+  <!-- Jendela detail buku -->
+  <div id="modal" class="modal" hidden>
+    <div class="modal-isi">
+      <button id="tutup" class="tutup" aria-label="Tutup">&times;</button>
+      <h2 id="m-judul"></h2>
+      <p id="m-penulis" class="penulis"></p>
+      <p id="m-info" class="info"></p>
+      <p id="m-sinopsis"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>Dibuat dengan HTML, CSS, dan JavaScript murni</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

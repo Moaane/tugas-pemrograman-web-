@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  background: #f6f1e7;
+  color: #3b2f2f;
+  line-height: 1.6;
+}
+
+header {
+  background: #5a3e36;
+  color: #fff8ec;
+  text-align: center;
+  padding: 40px 16px;
+}
+
+header h1 {
+  font-size: 2.2rem;
+}
+
+header p {
+  margin-top: 6px;
+  opacity: 0.85;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.kontrol {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.kontrol input,
+.kontrol select {
+  padding: 10px 14px;
+  font-size: 1rem;
+  font-family: inherit;
+  border: 1px solid #cdbba7;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.kontrol input {
+  flex: 1;
+  min-width: 200px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.kartu {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.kartu:hover {
+  transform: translateY(-4px);
+}
+
+.sampul {
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  text-align: center;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.kartu-teks {
+  padding: 12px 14px 16px;
+}
+
+.kartu-teks h3 {
+  font-size: 1rem;
+}
+
+.kartu-teks p {
+  font-size: 0.9rem;
+  color: #7a6a5f;
+}
+
+.label {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 2px 10px;
+  font-size: 0.75rem;
+  background: #efe4d2;
+  border-radius: 20px;
+}
+
+.kosong {
+  text-align: center;
+  color: #7a6a5f;
+  margin-top: 30px;
+}
+
+/* Jendela detail */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.modal[hidden] {
+  display: none;
+}
+
+.modal-isi {
+  position: relative;
+  background: #fff;
+  max-width: 480px;
+  width: 100%;
+  padding: 28px 24px;
+  border-radius: 10px;
+}
+
+.tutup {
+  position: absolute;
+  top: 8px;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #5a3e36;
+}
+
+.penulis {
+  color: #7a6a5f;
+  font-style: italic;
+}
+
+.info {
+  margin: 8px 0 14px;
+  font-size: 0.9rem;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.85rem;
+  color: #7a6a5f;
+}
